@@ -1,0 +1,26 @@
+{
+  "name": "news-weather-api",
+  "version": "1.0.0",
+  "description": "An API to fetch news and weather data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandeeprikhi/news-weather-api.git"
+  },
+  "author": "Amandeep Rikhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandeeprikhi/news-weather-api/issues"
+  },
+  "homepage": "https://github.com/amandeeprikhi/news-weather-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
