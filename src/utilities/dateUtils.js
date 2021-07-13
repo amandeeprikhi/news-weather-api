@@ -1,4 +1,4 @@
-let unixDateToHumanDate = function(unix_timestamp){
+let unixDateToHumanDate = function (unix_timestamp) {
     //let unix_timestamp = 1626071400
     // Create a new JavaScript Date object based on the timestamp
     // multiplied by 1000 so that the argument is in milliseconds, not seconds.
@@ -7,5 +7,5 @@ let unixDateToHumanDate = function(unix_timestamp){
 }
 
 module.exports = {
-    unixDateToHumanDate : unixDateToHumanDate
+    unixDateToHumanDate: unixDateToHumanDate
 }

@@ -13,7 +13,7 @@ let getWeather = async function getWeather() {
         weatherAPIResponse["location"] = "Faridabad"      //hardcoding the city name
         responseData["status"] = response.status
         weatherAPIResponse["data"] = []
-        for(let i = 0; i < 5; i++){         //iterating over the data items
+        for (let i = 0; i < 5; i++) {         //iterating over the data items
             let dataItem = response.data.daily[i]
             let dataObject = {}
             dataObject["date"] = dateUtil.unixDateToHumanDate(dataItem.dt)
@@ -28,7 +28,7 @@ let getWeather = async function getWeather() {
         console.log(error)
         if (error.response == undefined) {
             responseData["status"] = 500
-            responseData["data"] = {"message" : "Internal Server Error."}
+            responseData["data"] = { "message": "Internal Server Error." }
         }
         else {
             responseData["status"] = error.response.status

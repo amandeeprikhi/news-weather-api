@@ -12,6 +12,20 @@ let generateJWT = async function (username) {
     return token
 }
 
+let verifyJWT = async function (token) {
+    let tokenValue
+    try {
+        tokenValue = jwt.verify(token, jwtKey)
+        return tokenValue
+    } catch (e) {
+        if (e instanceof jwt.JsonWebTokenError) {
+            // if the error thrown is because the JWT is unauthorized, return a 401 error
+            return 401
+        }
+    }
+}
+
 module.exports = {
-    generateJWT: generateJWT
+    generateJWT: generateJWT,
+    verifyJWT: verifyJWT
 }

@@ -22,7 +22,7 @@ let addUser = async function (username, password, email) {
             flag = false
         }
     })
-    if(flag == false){
+    if (flag == false) {
         return token
     }
     const obj = {
