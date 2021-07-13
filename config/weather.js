@@ -6,10 +6,10 @@ let weatherParams = {
     lat: "28.4089",
     lon: "77.317",
     exclude: "hourly,minutely,alerts,current",
-    appid : weatherKey,
+    appid: weatherKey,
     units: weatherUnits
 }
 
 module.exports = {
-    weatherParams : weatherParams
+    weatherParams: weatherParams
 }
