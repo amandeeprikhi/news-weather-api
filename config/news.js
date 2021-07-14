@@ -8,7 +8,7 @@ let headlineParams = {
 }
 
 let queryParams = {
-
+    apiKey: newsKey
 }
 
 module.exports = {
